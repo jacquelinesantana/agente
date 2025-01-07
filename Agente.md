@@ -1,6 +1,4 @@
 # Acesso a máquina privada por meio de Agent Forwarding
------------------------------------------------------
-
 
 É uma técnica que permite que você use a chave privada armazenada no seu computador local para autenticar em uma instância privada (na subnet privada), passando pelo bastion host, sem a necessidade de transferir ou copiar a chave privada para o bastion host. No final do material vamos ter algumas dicas para o uso dessa tecnica.
 
@@ -15,8 +13,6 @@
 
 
 ## Agent Forwarding dicas
-======================
-
 
 
 1. para saber se o OpenSSh esta instalado na sua máquina execute o comando:
@@ -30,5 +26,3 @@
 
 4. iniciar o serviço OpenSSH:
     Start-Service ssh-agent
-
-
