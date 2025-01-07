@@ -16,13 +16,13 @@
 
 
 1. para saber se o OpenSSh esta instalado na sua máquina execute o comando:
-    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+    `Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'`
 
 2. instalar o OpenSSh caso não esteja instalado:
-    dism /Online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0
+    `dism /Online /Add-Capability /CapabilityName:OpenSSH.Client~~~~0.0.1.0`
 
 3. verificar se o OpenSSH esta executando na sua máquina:
-    Get-Service ssh-agent
+    `Get-Service ssh-agent`
 
 4. iniciar o serviço OpenSSH:
-    Start-Service ssh-agent
+    `Start-Service ssh-agent`
